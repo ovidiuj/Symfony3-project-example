@@ -124,7 +124,7 @@ class JobController extends Controller
             );
         }
 
-        $job->setStatus(State::STATE_PUBLIC);
+        $job->setStatus($job->setPublished());
         $em->persist($job);
         $em->flush();
 
@@ -148,7 +148,7 @@ class JobController extends Controller
             );
         }
 
-        $job->setStatus(State::STATE_SPAM);
+        $job->setStatus($job->setSpam());
         $em->persist($job);
         $em->flush();
 

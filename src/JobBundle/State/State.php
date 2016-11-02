@@ -46,7 +46,7 @@ class State implements StateInterface
      */
     public function spam()
     {
-        return new self(self::STATE_PUBLIC);
+        return new self(self::STATE_SPAM);
     }
 
     /**
