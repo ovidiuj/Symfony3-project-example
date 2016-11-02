@@ -2,4 +2,4 @@
 <p>The  email addres of HR manager is: <b>{{ email }}</b></p>
 <p>{{ title }}.</p>
 <p>{{ description }}.</p>
-<p><a href="{{ path('job_publish', {'id': id}) }}">Publish</a> | <a href="{{ path('job_spam', {'id': id}) }}">Mark it as spam</a>
+<p><a href="{{ app.request.getSchemeAndHttpHost() }}{{ path('job_publish', {'id': id}) }}">Publish</a> | <a href="{{ app.request.getSchemeAndHttpHost() }}{{ path('job_spam', {'id': id}) }}">Mark it as spam</a>

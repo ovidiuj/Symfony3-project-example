@@ -5,10 +5,6 @@ namespace MailerBundle\Service;
 
 use Symfony\Component\Templating\EngineInterface;
 
-/**
- * Class MailerService
- * @package MailerBundle\Service
- */
 class MailerService implements MailerServiceInterface
 {
     /**
