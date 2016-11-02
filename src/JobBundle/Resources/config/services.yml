@@ -1,0 +1,6 @@
+services:
+  job.create.listener:
+    class: JobBundle\EventListener\MailerListener
+    arguments: ["@mailer_service", "%mailer_moderator_address%"]
+    tags:
+        - { name: doctrine.event_listener, event: postPersist }

@@ -1,0 +1,4 @@
+JobBundle\Entity\Job:
+    properties:
+        email:
+            - Email: ~

@@ -1,0 +1,3 @@
+mailer_homepage:
+    path:     /
+    defaults: { _controller: MailerBundle:Default:index }

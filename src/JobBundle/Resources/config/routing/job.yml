@@ -1,0 +1,34 @@
+job_index:
+    path:     /
+    defaults: { _controller: "JobBundle:Job:index" }
+    methods:  GET
+
+job_show:
+    path:     /{id}/show
+    defaults: { _controller: "JobBundle:Job:show" }
+    methods:  GET
+
+job_new:
+    path:     /new
+    defaults: { _controller: "JobBundle:Job:new" }
+    methods:  [GET, POST]
+
+job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "JobBundle:Job:edit" }
+    methods:  [GET, POST]
+
+job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "JobBundle:Job:delete" }
+    methods:  DELETE
+
+job_publish:
+    path:     /{id}/publish
+    defaults: { _controller: "JobBundle:Job:publish" }
+    methods:  GET
+
+job_spam:
+    path:     /{id}/spam
+    defaults: { _controller: "JobBundle:Job:spam" }
+    methods:  GET

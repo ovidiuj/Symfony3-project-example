@@ -1,0 +1,30 @@
+JobBundle\Entity\Job:
+  type: entity
+  table: jobs
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    title:
+      type: string
+    description:
+      type: text
+    email:
+      type: string
+    status:
+      type: string
+      nullable: true
+    postedAt:
+      type: datetime
+      column: posted_at
+      gedmo:
+        timestampable:
+          on: create
+    updatedAt:
+      type: datetime
+      column: updated_at
+      gedmo:
+        timestampable:
+          on: update

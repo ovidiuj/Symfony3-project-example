@@ -19,5 +19,5 @@ In a context of hypothetical job board project, the implementation is following 
 
 ##Installation & Usage
 
-* run ``` composer update ```
+* run ``` composer install ```
 * go to ``` http://<YOUR_LOCAL_HOST>/job/ ``` to get the list  of all jobs

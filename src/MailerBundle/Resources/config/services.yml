@@ -1,0 +1,8 @@
+parameters:
+  mailer.service.class: 'MailerBundle\Service\MailerService'
+  mailer.template.path: "%kernel.root_dir%/Resources/views/email/"
+
+services:
+  mailer_service:
+    class: "%mailer.service.class%"
+    arguments: ["@mailer", "@twig",  {'address': "%mailer_sender_address%", 'name': "%mailer_sender_name%"}, "%mailer.template.path%"]

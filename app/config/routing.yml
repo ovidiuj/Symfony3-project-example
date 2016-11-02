@@ -1,0 +1,4 @@
+job:
+    resource: "@JobBundle/Resources/config/routing.yml"
+    prefix:   /
+
